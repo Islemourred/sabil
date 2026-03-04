@@ -128,5 +128,12 @@
     },
     "copyright": "© 2026 SABIL. Tous droits réservés.",
     "backToTop": "Retour en haut"
+  },
+  "downloadModal": {
+    "subtitle": "Choisissez votre plateforme pour commencer votre aventure numérique.",
+    "getItOn": "TÉLÉCHARGER SUR",
+    "googlePlay": "Google Play",
+    "downloadOnThe": "TÉLÉCHARGER SUR",
+    "appStore": "App Store"
   }
 }

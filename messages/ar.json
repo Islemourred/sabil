@@ -128,5 +128,12 @@
     },
     "copyright": "© 2026 سبيل. جميع الحقوق محفوظة.",
     "backToTop": "العودة إلى الأعلى"
+  },
+  "downloadModal": {
+    "subtitle": "اختر منصتك لبدء رحلتك الرقمية.",
+    "getItOn": "متوفر على",
+    "googlePlay": "Google Play",
+    "downloadOnThe": "تحميل من",
+    "appStore": "App Store"
   }
 }

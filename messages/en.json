@@ -27,6 +27,33 @@
     "subtitle": "Anytime, anywhere. Just your phone, your code, your way. Because life is simpler when everything you need is in one place.",
     "cta": "Download"
   },
+  "phoneMockup": {
+    "providedBy": "Provided by Sabil",
+    "topUp": "Top-up",
+    "cardName": "Sabil principal",
+    "transfer": "Transfer",
+    "spend": "Spend",
+    "notifications": "Notifications",
+    "rechargeTitle": "Recharge Successful",
+    "rechargeDesc": "Ooredoo +500 DA",
+    "rechargeTime": "2m ago",
+    "transferTitle": "Transfer Received",
+    "transferDesc": "From Ahmed K. +2,000 DA",
+    "transferTime": "1h ago",
+    "billTitle": "Bill Payment",
+    "billDesc": "Sonelgaz -1,200 DA",
+    "billTime": "3h ago",
+    "promoTitle": "Promo Offer",
+    "promoDesc": "50% off on Mobilis recharge",
+    "promoTime": "5h ago",
+    "cardTitle": "Card Activated",
+    "cardDesc": "Your virtual card is ready",
+    "cardTime": "1d ago",
+    "home": "Home",
+    "services": "Services",
+    "chat": "Chat",
+    "account": "Account"
+  },
   "features": {
     "title": "Powering Daily Life, One Click at a Time.",
     "subtitle": "Sabil brings your daily digital needs into one secure platform.",
@@ -128,5 +155,12 @@
     },
     "copyright": "© 2026 SABIL. All Rights Reserved.",
     "backToTop": "Back to top"
+  },
+  "downloadModal": {
+    "subtitle": "Choose your platform to start your digital journey.",
+    "getItOn": "GET IT ON",
+    "googlePlay": "Google Play",
+    "downloadOnThe": "DOWNLOAD ON THE",
+    "appStore": "App Store"
   }
 }
