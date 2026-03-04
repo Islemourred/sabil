@@ -25,7 +25,7 @@ const navLinks = [
   { key: "sabilStore", href: "#products" },
   { key: "sabilGo", href: "#products" },
   { key: "sabilPay", href: "#products" },
-  { key: "services", href: "#features" },
+  { key: "services", href: "/services" },
   { key: "contact", href: "#contact" },
 ];
 

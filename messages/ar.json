@@ -25,7 +25,8 @@
     "label": "شريكك الرقمي اليومي",
     "title": "رفيقك الرقمي\n الشامل",
     "subtitle": "في أي وقت، وفي أي مكان. فقط هاتفك، رمزك، طريقتك. لأن الحياة أبسط عندما يكون كل ما تحتاجه في مكان واحد.",
-    "cta": "حمّل الآن"
+    "cta": "حمّل الآن",
+    "exploreServices": "استكشف خدماتنا"
   },
   "phoneMockup": {
     "providedBy": "مقدم من سبيل",
@@ -164,5 +165,43 @@
     "googlePlay": "Google Play",
     "downloadOnThe": "تحميل من",
     "appStore": "App Store"
+  },
+  "servicesPage": {
+    "title": "خدماتنا",
+    "subtitle": "اكتشف جميع الخدمات التي يقدمها سبيل لتبسيط حياتك الرقمية.",
+    "searchPlaceholder": "ابحث عن خدمة...",
+    "categories": {
+      "all": "الكل",
+      "telecom": "اتصالات",
+      "bills": "فواتير",
+      "finance": "مالية",
+      "transport": "نقل",
+      "other": "أخرى"
+    },
+    "services": {
+      "ade": { "name": "ADE", "desc": "ادفع فاتورة الماء من هاتفك" },
+      "agentForm": { "name": "نموذج وكيل", "desc": "سجل كوكيل" },
+      "agents": { "name": "الوكلاء", "desc": "اشحن وبادل رصيدك" },
+      "atFactures": { "name": "فواتير AT", "desc": "ادفع فواتير اتصالات الجزائر" },
+      "cib": { "name": "CIB", "desc": "اشحن رصيدك ببطاقة CIB" },
+      "facilite": { "name": "تسهيلات", "desc": "تسهيلات سبيل (SACOMI, البركة)" },
+      "flexy": { "name": "Flexy", "desc": "شحن رصيد وبيانات الهاتف" },
+      "carteCadeaux": { "name": "بطاقات هدايا", "desc": "اشترِ بطاقات هدايا" },
+      "internet": { "name": "إنترنت", "desc": "اشحن إنترنتك (Idoom & 4G)" },
+      "servicesShop": { "name": "خدمات", "desc": "تصفح جميع الخدمات" },
+      "iptv": { "name": "IPTV", "desc": "كتالوغ كبير من اشتراكات IPTV" },
+      "sabilPos": { "name": "Sabil POS", "desc": "نظام نقاط بيع ذكي" },
+      "seaal": { "name": "SEAAL", "desc": "ادفع فواتير الماء" },
+      "sonelgaz": { "name": "Sonelgaz", "desc": "ادفع فواتير الكهرباء" },
+      "timbresFiscaux": { "name": "طوابع ضريبية", "desc": "دفع الطوابع الضريبية عبر الإنترنت" },
+      "vignetteAuto": { "name": "فينيات السيارات", "desc": "اطلب فينيات سيارتك" },
+      "eVoucher": { "name": "E-Voucher", "desc": "اشحن ببون شحن" },
+      "zteBonus": { "name": "ZTE Bonus", "desc": "بونيصات شركاء ZTE" },
+      "zteScan": { "name": "ZTE Scan", "desc": "مسح IMEI ZTE" },
+      "zteSignup": { "name": "ZTE Signup", "desc": "سجل كشريك ZTE" },
+      "gestimmo": { "name": "GESTIMMO", "desc": "ادفع فواتير GESTIMMO" },
+      "seor": { "name": "SEOR", "desc": "ادفع فواتير الماء" },
+      "sogral": { "name": "SOGRAL", "desc": "ادفع رحلات الحافلة بسهولة" }
+    }
   }
 }

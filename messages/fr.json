@@ -25,7 +25,8 @@
     "label": "Votre Partenaire Numérique au Quotidien",
     "title": "Votre Compagnon\n Numérique Tout\n en Un",
     "subtitle": "À tout moment, partout. Juste votre téléphone, votre code, votre façon. Parce que la vie est plus simple quand tout ce dont vous avez besoin est au même endroit.",
-    "cta": "Télécharger Maintenant"
+    "cta": "Télécharger Maintenant",
+    "exploreServices": "Explorer nos services"
   },
   "phoneMockup": {
     "providedBy": "Fourni par Sabil",
@@ -164,5 +165,43 @@
     "googlePlay": "Google Play",
     "downloadOnThe": "TÉLÉCHARGER SUR",
     "appStore": "App Store"
+  },
+  "servicesPage": {
+    "title": "Nos Services",
+    "subtitle": "Découvrez tous les services que Sabil offre pour simplifier votre vie numérique.",
+    "searchPlaceholder": "Rechercher un service...",
+    "categories": {
+      "all": "Tous",
+      "telecom": "Télécom",
+      "bills": "Factures",
+      "finance": "Finance",
+      "transport": "Transport",
+      "other": "Autres"
+    },
+    "services": {
+      "ade": { "name": "ADE", "desc": "Payez votre facture d'eau depuis votre téléphone" },
+      "agentForm": { "name": "Formulaire Agent", "desc": "Inscrivez-vous en tant qu'agent" },
+      "agents": { "name": "Agents", "desc": "Rechargez et échangez votre solde" },
+      "atFactures": { "name": "AT Factures", "desc": "Payez vos factures Algérie Télécom" },
+      "cib": { "name": "CIB", "desc": "Rechargez votre solde avec votre carte CIB" },
+      "facilite": { "name": "Facilité", "desc": "Sabil facilité (Sabil, SACOMI, Al Baraka)" },
+      "flexy": { "name": "Flexy", "desc": "Recharge crédit & data mobile" },
+      "carteCadeaux": { "name": "Cartes Cadeaux", "desc": "Achetez des cartes cadeaux" },
+      "internet": { "name": "Internet", "desc": "Rechargez votre internet (Idoom & 4G)" },
+      "servicesShop": { "name": "Services", "desc": "Parcourez tous les services" },
+      "iptv": { "name": "IPTV", "desc": "Large catalogue d'abonnements IPTV" },
+      "sabilPos": { "name": "Sabil POS", "desc": "Un système de point de vente intelligent" },
+      "seaal": { "name": "SEAAL", "desc": "Payez vos factures d'eau" },
+      "sonelgaz": { "name": "Sonelgaz", "desc": "Payez vos factures d'électricité" },
+      "timbresFiscaux": { "name": "Timbres Fiscaux", "desc": "Paiement en ligne des timbres fiscaux" },
+      "vignetteAuto": { "name": "Vignette Auto", "desc": "Commandez votre vignette automobile" },
+      "eVoucher": { "name": "E-Voucher", "desc": "Rechargez avec un bon de recharge" },
+      "zteBonus": { "name": "ZTE Bonus", "desc": "Bonus des partenaires ZTE" },
+      "zteScan": { "name": "ZTE Scan", "desc": "Scanner IMEI ZTE" },
+      "zteSignup": { "name": "ZTE Signup", "desc": "Inscrivez-vous en tant que partenaire ZTE" },
+      "gestimmo": { "name": "GESTIMMO", "desc": "Payez vos factures GESTIMMO" },
+      "seor": { "name": "SEOR", "desc": "Payez vos factures d'eau" },
+      "sogral": { "name": "SOGRAL", "desc": "Payez facilement vos trajets en bus" }
+    }
   }
 }

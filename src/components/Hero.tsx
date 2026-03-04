@@ -84,6 +84,12 @@ export function Hero() {
                 <Download className="h-5 w-5" />
                 <span>{t("cta")}</span>
               </button>
+              <a
+                href="#features"
+                className="inline-flex items-center gap-2.5 px-7 py-3.5 text-base font-semibold text-gray-700 dark:text-white border border-gray-200 dark:border-white/10 rounded-xl hover:bg-gray-50 dark:hover:bg-white/5 transition-all duration-300"
+              >
+                <span>{t("exploreServices")}</span>
+              </a>
             </motion.div>
           </motion.div>
 

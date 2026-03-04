@@ -25,7 +25,8 @@
     "label": "Your Everyday Digital Partner",
     "title": "Your All in One\n Digital Companion",
     "subtitle": "Anytime, anywhere. Just your phone, your code, your way. Because life is simpler when everything you need is in one place.",
-    "cta": "Download Now"
+    "cta": "Download Now",
+    "exploreServices": "Explore our services"
   },
   "phoneMockup": {
     "providedBy": "Provided by Sabil",
@@ -164,5 +165,43 @@
     "googlePlay": "Google Play",
     "downloadOnThe": "DOWNLOAD ON THE",
     "appStore": "App Store"
+  },
+  "servicesPage": {
+    "title": "Our Services",
+    "subtitle": "Discover all the services Sabil offers to simplify your daily digital life.",
+    "searchPlaceholder": "Search services...",
+    "categories": {
+      "all": "All",
+      "telecom": "Telecom",
+      "bills": "Bills & Utilities",
+      "finance": "Finance",
+      "transport": "Transport",
+      "other": "Other"
+    },
+    "services": {
+      "ade": { "name": "ADE", "desc": "Pay your water bill from your phone" },
+      "agentForm": { "name": "Agent Form", "desc": "Sign up as an agent" },
+      "agents": { "name": "Agents", "desc": "Top up and exchange your balance" },
+      "atFactures": { "name": "AT Factures", "desc": "Pay your Algérie Telecom bills" },
+      "cib": { "name": "CIB", "desc": "Top up your balance using your CIB card" },
+      "facilite": { "name": "Facilité", "desc": "Sabil facilité (Sabil, SACOMI, Al Baraka)" },
+      "flexy": { "name": "Flexy", "desc": "Airtime & mobile data top up" },
+      "carteCadeaux": { "name": "Gift Cards", "desc": "Buy gift cards from your phone" },
+      "internet": { "name": "Internet", "desc": "Top up your internet (Idoom & 4G)" },
+      "servicesShop": { "name": "Services", "desc": "Browse all available services" },
+      "iptv": { "name": "IPTV", "desc": "Large catalog of IPTV subscriptions" },
+      "sabilPos": { "name": "Sabil POS", "desc": "A smart point of sale system" },
+      "seaal": { "name": "SEAAL", "desc": "Pay your water bills from your phone" },
+      "sonelgaz": { "name": "Sonelgaz", "desc": "Pay your electric bills from your phone" },
+      "timbresFiscaux": { "name": "Timbres Fiscaux", "desc": "Online fiscal stamp payments" },
+      "vignetteAuto": { "name": "Vignette Auto", "desc": "Order your car vignette online" },
+      "eVoucher": { "name": "E-Voucher", "desc": "Top up your balance using a voucher" },
+      "zteBonus": { "name": "ZTE Bonus", "desc": "Bonus from ZTE partners" },
+      "zteScan": { "name": "ZTE Scan", "desc": "Scan ZTE IMEI" },
+      "zteSignup": { "name": "ZTE Signup", "desc": "Sign up as a ZTE partner" },
+      "gestimmo": { "name": "GESTIMMO", "desc": "Pay your GESTIMMO bills from your phone" },
+      "seor": { "name": "SEOR", "desc": "Pay your water bills from your phone" },
+      "sogral": { "name": "SOGRAL", "desc": "Pay your bus trips easily" }
+    }
   }
 }
