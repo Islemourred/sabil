@@ -1,0 +1,132 @@
+{
+  "topBar": {
+    "howToPay": "Comment payer",
+    "openStore": "Ouvrir votre boutique",
+    "partnerWithUs": "Devenir partenaire",
+    "terms": "Conditions générales",
+    "sabilPro": "Sabil PRO",
+    "help": "Aide",
+    "contactUs": "Contactez-nous"
+  },
+  "nav": {
+    "home": "Accueil",
+    "sabilApp": "Sabil APP",
+    "sabilStore": "Sabil Store",
+    "sabilGo": "Sabil GO",
+    "sabilPay": "Sabil Pay",
+    "services": "Services",
+    "contact": "Contact",
+    "download": "Télécharger",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système"
+  },
+  "hero": {
+    "label": "Votre Partenaire Numérique au Quotidien",
+    "title": "Votre Compagnon\n Numérique Tout\n en Un",
+    "subtitle": "À tout moment, partout. Juste votre téléphone, votre code, votre façon. Parce que la vie est plus simple quand tout ce dont vous avez besoin est au même endroit.",
+    "cta": "Télécharger"
+  },
+  "features": {
+    "title": "Alimenter la Vie Quotidienne, Un Clic à la Fois.",
+    "subtitle": "Sabil rassemble vos besoins numériques quotidiens dans une plateforme sécurisée.",
+    "items": {
+      "recharge": {
+        "title": "Recharger & Partager",
+        "description": "Rechargez votre solde instantanément avec un coupon numérique et envoyez du crédit à n'importe qui, à tout moment. C'est rapide, facile et disponible où que vous soyez."
+      },
+      "send": {
+        "title": "Envoyer & Recevoir",
+        "description": "Envoyez du crédit à n'importe qui, recevez des récompenses et profitez de transferts instantanés et sécurisés, le tout depuis votre portefeuille Sabil."
+      },
+      "access": {
+        "title": "Accéder à Plus",
+        "description": "Besoin de payer des factures ou de renouveler votre internet ? Sabil vous facilite la tâche. Des services publics au mobile et Wi-Fi, tout peut être payé en un seul endroit de manière sécurisée et instantanée."
+      }
+    }
+  },
+  "products": {
+    "title": "Nos Produits",
+    "subtitle": "Découvrez l'écosystème Sabil conçu pour votre vie numérique quotidienne.",
+    "sabilApp": {
+      "title": "Sabil App",
+      "description": "Votre compagnon mobile tout en un pour les recharges, les transferts, le paiement de factures et plus encore. Rapide, sécurisé et toujours à portée de main."
+    },
+    "sabilStore": {
+      "title": "Sabil Store",
+      "description": "Ouvrez votre boutique numérique et commencez à vendre en ligne sans tracas. Gérez produits, commandes et paiements en un seul endroit."
+    },
+    "sabilGo": {
+      "title": "Sabil Go",
+      "description": "Réservez un trajet à tout moment, n'importe où. Sabil Go vous connecte avec des chauffeurs fiables pour des voyages sûrs et confortables à travers la ville."
+    },
+    "sabilPay": {
+      "title": "Sabil Pay",
+      "description": "Acceptez les paiements en toute fluidité avec Sabil Pay. Une solution fintech moderne pour les entreprises et les particuliers."
+    }
+  },
+  "partners": {
+    "title": "Partenaires Sabil",
+    "subtitle": "Approuvé par les grandes marques et institutions à travers l'Algérie.",
+    "cta": "Contactez-nous pour un partenariat"
+  },
+  "news": {
+    "title": "Dernières Actualités",
+    "viewAll": "Voir toutes les actualités",
+    "readMore": "Lire la suite",
+    "items": {
+      "classifieds": {
+        "title": "Sabil Petites Annonces",
+        "date": "26 Février 2026",
+        "excerpt": "Nous sommes ravis d'annoncer que Sabil Petites Annonces, notre prochaine plateforme de petites annonces, est actuellement en préparation et sera bientôt lancée."
+      },
+      "go": {
+        "title": "Sabil Go, une nouvelle façon de se déplacer.",
+        "date": "26 Février 2026",
+        "excerpt": "Nous sommes ravis d'annoncer que Sabil Go, notre prochain service VTC, est actuellement en préparation et sera bientôt lancé."
+      },
+      "albaraka": {
+        "title": "Plateforme Sabil Albaraka",
+        "date": "24 Février 2026",
+        "excerpt": "🚀 Sabil × Al Baraka Bank : Une nouvelle ère de BNPL conforme à la Charia en Algérie. Nous sommes fiers d'annoncer un partenariat révolutionnaire."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Vous avez une question ou souhaitez devenir partenaire ? Nous serions ravis de vous entendre.",
+    "name": "Nom complet",
+    "email": "Adresse e-mail",
+    "message": "Votre message",
+    "send": "Envoyer le message",
+    "partnerTitle": "Devenir Partenaire",
+    "partnerDescription": "Rejoignez l'écosystème Sabil et développez votre activité avec nous."
+  },
+  "footer": {
+    "description": "Votre compagnon numérique tout-en-un en Algérie. Simplifiant les recharges mobiles, les transferts et les paiements.",
+    "links": {
+      "products": "Produits",
+      "company": "Entreprise",
+      "legal": "Juridique",
+      "sabilApp": "Sabil App",
+      "sabilStore": "Sabil Store",
+      "sabilGo": "Sabil Go",
+      "sabilPay": "Sabil Pay",
+      "about": "À propos",
+      "careers": "Carrières",
+      "news": "Actualités",
+      "contact": "Contact",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation",
+      "cookies": "Politique des cookies"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "button": "S'abonner",
+      "subtitle": "Inscrivez-vous pour recevoir les dernières nouvelles.",
+      "placeholder": "Entrez votre email"
+    },
+    "copyright": "© 2026 SABIL. Tous droits réservés.",
+    "backToTop": "Retour en haut"
+  }
+}
