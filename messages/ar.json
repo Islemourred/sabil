@@ -203,5 +203,16 @@
       "seor": { "name": "SEOR", "desc": "ادفع فواتير الماء" },
       "sogral": { "name": "SOGRAL", "desc": "ادفع رحلات الحافلة بسهولة" }
     }
+  },
+  "authModal": {
+    "title": "مصادقة سبيل",
+    "country": "البلد",
+    "phoneNumber": "رقم الهاتف",
+    "phonePlaceholder": "رقم هاتفك",
+    "sendCode": "إرسال الرمز",
+    "algeria": "الجزائر (+213)",
+    "tunisia": "تونس (+216)",
+    "morocco": "المغرب (+212)",
+    "france": "فرنسا (+33)"
   }
 }

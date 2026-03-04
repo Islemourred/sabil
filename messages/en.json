@@ -203,5 +203,16 @@
       "seor": { "name": "SEOR", "desc": "Pay your water bills from your phone" },
       "sogral": { "name": "SOGRAL", "desc": "Pay your bus trips easily" }
     }
+  },
+  "authModal": {
+    "title": "Sabil Authentication",
+    "country": "Country",
+    "phoneNumber": "Phone number",
+    "phonePlaceholder": "Your phone number",
+    "sendCode": "Send the code",
+    "algeria": "Algeria (+213)",
+    "tunisia": "Tunisia (+216)",
+    "morocco": "Morocco (+212)",
+    "france": "France (+33)"
   }
 }

@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { TopBar } from "@/components/TopBar";
+import { AuthModal } from "@/components/AuthModal";
 import { useTranslations } from "@/lib/i18n";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
@@ -47,6 +47,8 @@ export default function ServicesPage() {
   const { t } = useTranslations("servicesPage");
   const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState("all");
+  const [authOpen, setAuthOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState("");
 
   const filteredServices = useMemo(() => {
     return servicesList.filter((s) => {
@@ -64,13 +66,11 @@ export default function ServicesPage() {
 
   return (
     <>
-      <TopBar />
       <Header />
 
-      <main className="min-h-screen pt-8 pb-20">
+      <main className="min-h-screen pb-20">
         {/* Hero header */}
-        <section className="relative py-16 lg:py-20 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-sabil/[0.04] to-transparent dark:from-sabil/[0.06]" />
+        <section className="relative py-8 lg:py-10 overflow-hidden">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -145,6 +145,10 @@ export default function ServicesPage() {
                     layout: { duration: 0.3 },
                   }}
                   className="group relative bg-white dark:bg-dark-light rounded-2xl border border-gray-100 dark:border-white/[0.06] p-6 cursor-pointer hover:border-sabil/30 hover:shadow-xl hover:shadow-sabil/5 hover:-translate-y-1 transition-all duration-300"
+                  onClick={() => {
+                    setSelectedService(t(`services.${service.key}.name`) as string);
+                    setAuthOpen(true);
+                  }}
                 >
                   {/* Icon */}
                   <div
@@ -202,6 +206,12 @@ export default function ServicesPage() {
       </main>
 
       <Footer />
+
+      <AuthModal
+        isOpen={authOpen}
+        onClose={() => setAuthOpen(false)}
+        serviceName={selectedService}
+      />
     </>
   );
 }
