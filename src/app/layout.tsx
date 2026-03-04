@@ -40,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" dir="ltr" suppressHydrationWarning>
-      <body className={`${jost.variable} antialiased`} suppressHydrationWarning>
+      <body className={`${jost.variable} antialiased overflow-x-hidden`} suppressHydrationWarning>
         <ReduxProvider>
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
             <I18nProvider>
