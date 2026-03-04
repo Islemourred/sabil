@@ -42,7 +42,7 @@ export default function RootLayout({
     <html lang="fr" dir="ltr" suppressHydrationWarning>
       <body className={`${jost.variable} antialiased overflow-x-hidden`} suppressHydrationWarning>
         <ReduxProvider>
-          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true}>
             <I18nProvider>
               <AnimatedBackground />
               <DownloadModal />
