@@ -15,7 +15,7 @@ import {
   MoonIcon as Moon,
   ComputerDesktopIcon as Monitor,
   ChevronDownIcon as ChevronDown,
-  PlayIcon as Play,
+  ArrowDownTrayIcon as Download,
   GlobeAltIcon as Globe,
 } from "@heroicons/react/24/outline";
 
@@ -222,7 +222,7 @@ export function Header() {
               onClick={() => dispatch(setDownloadModalOpen(true))}
               className="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-dark bg-sabil rounded-lg hover:bg-sabil-light transition-colors duration-200"
             >
-              <Play className="h-4 w-4 fill-current" />
+              <Download className="h-4 w-4" />
               <span>{t("download")}</span>
             </button>
 
@@ -269,7 +269,7 @@ export function Header() {
                 }}
                 className="mt-3 flex items-center justify-center gap-2 w-full px-4 py-2.5 text-sm font-semibold text-dark bg-sabil rounded-lg hover:bg-sabil-light transition-colors"
               >
-                <Play className="h-4 w-4 fill-current" />
+                <Download className="h-4 w-4" />
                 <span>{t("download")}</span>
               </button>
             </div>

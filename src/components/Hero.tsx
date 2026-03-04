@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useTranslations } from "@/lib/i18n";
 import { useAppDispatch } from "@/store/hooks";
 import { setDownloadModalOpen } from "@/store/slices/uiSlice";
-import { PlayIcon as Play } from "@heroicons/react/24/outline";
+import { ArrowDownTrayIcon as Download } from "@heroicons/react/24/outline";
 import { Smartphone, Wifi, CreditCard, ShieldCheck, Zap } from "lucide-react";
 
 export function Hero() {
@@ -81,7 +81,7 @@ export function Hero() {
                 onClick={() => dispatch(setDownloadModalOpen(true))}
                 className="inline-flex items-center gap-2.5 px-7 py-3.5 text-base font-semibold text-dark bg-sabil rounded-xl hover:bg-sabil-light transition-all duration-300 hover:shadow-lg hover:shadow-sabil/25"
               >
-                <Play className="h-5 w-5 fill-current" />
+                <Download className="h-5 w-5" />
                 <span>{t("cta")}</span>
               </button>
             </motion.div>
