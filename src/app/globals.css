@@ -5,7 +5,20 @@
 @tailwind utilities;
 
 /* Prevent horizontal scroll globally */
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+  font-size: clamp(14px, 0.5vw + 0.5rem, 16px);
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
 
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+}
 
 :root {
   --sabil: #00ff95;
@@ -24,13 +37,7 @@
 }
 
 @layer base {
-  html {
-    font-size: clamp(14px, 0.5vw + 0.5rem, 16px);
-    scroll-behavior: smooth;
-  }
-  html {
-    scroll-padding-top: 80px;
-  }
+  /* html base styles are defined above outside @layer to ensure highest specificity */
 }
 
 @layer components {

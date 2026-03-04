@@ -42,11 +42,17 @@ export default function RootLayout({
     <html lang="fr" dir="ltr" suppressHydrationWarning>
       <body className={`${jost.variable} antialiased`} suppressHydrationWarning>
         <ReduxProvider>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem={true}
+          >
             <I18nProvider>
-              <AnimatedBackground />
-              <DownloadModal />
-              {children}
+              <div className="w-full overflow-x-hidden relative">
+                <AnimatedBackground />
+                <DownloadModal />
+                {children}
+              </div>
             </I18nProvider>
           </ThemeProvider>
         </ReduxProvider>
