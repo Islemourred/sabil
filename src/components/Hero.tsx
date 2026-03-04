@@ -28,10 +28,13 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sabil/10 border border-sabil/20 mb-6"
+              className="inline-flex items-center gap-2.5 mb-6"
             >
-              <Zap className="h-4 w-4 text-sabil" />
-              <span className="text-sm font-medium text-sabil">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sabil opacity-75" />
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-sabil" />
+              </span>
+              <span className="text-sm font-medium text-gray-400 dark:text-gray-500 tracking-wide uppercase">
                 {t("label")}
               </span>
             </motion.div>
@@ -106,109 +109,129 @@ export function Hero() {
               className="relative"
               style={{ perspective: "1000px" }}
             >
+              {/* Outer phone shell */}
               <div
-                className="relative w-64 sm:w-72 h-[500px] sm:h-[540px] rounded-[2.5rem] bg-gradient-to-b from-dark-lighter to-dark-light border-2 border-white/10 shadow-2xl overflow-hidden"
+                className="relative w-[270px] sm:w-[290px] h-[540px] sm:h-[580px]"
                 style={{
                   transform: "rotateY(-5deg) rotateX(2deg)",
                 }}
               >
-                {/* Phone screen content */}
-                <div className="absolute inset-0 p-4 pt-12">
-                  {/* Status bar */}
-                  <div className="flex items-center justify-between text-white/60 text-xs mb-6 px-2">
-                    <span>9:41</span>
-                    <div className="flex items-center gap-1">
-                      <Wifi className="h-3 w-3" />
-                      <div className="w-5 h-2.5 rounded-sm border border-white/40">
-                        <div className="w-3/4 h-full bg-sabil rounded-sm" />
+                {/* Phone body with layered borders for realism */}
+                <div className="absolute inset-0 rounded-[3rem] bg-gradient-to-b from-[#2a2d35] to-[#1a1d25] shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_20px_60px_-10px_rgba(0,0,0,0.5),0_0_80px_-20px_rgba(0,255,149,0.08)]" />
+                
+                {/* Inner bezel */}
+                <div className="absolute inset-[3px] rounded-[2.8rem] bg-gradient-to-b from-[#1e2028] to-[#14161e] overflow-hidden">
+                  
+                  {/* Screen area */}
+                  <div className="absolute inset-[3px] rounded-[2.6rem] bg-dark overflow-hidden">
+                    
+                    {/* Dynamic Island */}
+                    <div className="absolute top-3 inset-x-0 flex justify-center z-20">
+                      <div className="w-[90px] h-[28px] bg-black rounded-full flex items-center justify-center">
+                        <div className="w-2.5 h-2.5 rounded-full bg-[#1a1d25] ml-8" />
+                      </div>
+                    </div>
+
+                    {/* Screen content */}
+                    <div className="absolute inset-0 p-4 pt-14">
+                      {/* Status bar */}
+                      <div className="flex items-center justify-between text-white/60 text-xs mb-5 px-1">
+                        <span className="font-semibold">9:41</span>
+                        <div className="flex items-center gap-1">
+                          <Wifi className="h-3.5 w-3.5" />
+                          <div className="w-6 h-3 rounded-[2px] border border-white/40 relative">
+                            <div className="absolute inset-[1px] right-[2px] w-3/4 bg-sabil rounded-[1px]" />
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* App header */}
+                      <div className="text-center mb-5 flex flex-col items-center">
+                        <Image
+                          src="/logo.png"
+                          alt="Sabil"
+                          width={44}
+                          height={44}
+                          className="rounded-2xl mb-2.5"
+                        />
+                        <h3 className="text-white font-medium text-base font-futura flex items-baseline justify-center" dir="ltr">
+                          S<span className="lowercase text-[1.25em] leading-none">a</span>BIL
+                        </h3>
+                        <p className="text-white/40 text-[11px] mt-0.5">Welcome back</p>
+                      </div>
+
+                      {/* Balance card */}
+                      <div className="bg-gradient-to-br from-sabil/15 to-sabil/5 rounded-2xl p-3.5 mb-3.5 border border-sabil/15">
+                        <p className="text-white/50 text-[11px]">Balance</p>
+                        <p className="text-sabil text-xl font-bold mt-0.5">
+                          12,500 DA
+                        </p>
+                      </div>
+
+                      {/* Quick actions */}
+                      <div className="grid grid-cols-3 gap-2.5 mb-3.5">
+                        {[
+                          {
+                            icon: <Smartphone className="h-5 w-5" />,
+                            label: "Recharge",
+                          },
+                          {
+                            icon: <CreditCard className="h-5 w-5" />,
+                            label: "Transfer",
+                          },
+                          {
+                            icon: <ShieldCheck className="h-5 w-5" />,
+                            label: "Pay",
+                          },
+                        ].map((action) => (
+                          <div
+                            key={action.label}
+                            className="flex flex-col items-center gap-1.5 p-2.5 rounded-xl bg-white/[0.04] border border-white/[0.06]"
+                          >
+                            <div className="text-sabil">{action.icon}</div>
+                            <span className="text-white/60 text-[10px]">
+                              {action.label}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+
+                      {/* Recent transactions */}
+                      <div className="space-y-1.5">
+                        <p className="text-white/40 text-[11px] font-medium px-0.5">
+                          Recent
+                        </p>
+                        {[
+                          { name: "Ooredoo", amount: "500 DA" },
+                          { name: "AT Internet", amount: "2,000 DA" },
+                        ].map((tx) => (
+                          <div
+                            key={tx.name}
+                            className="flex items-center justify-between p-2.5 rounded-xl bg-white/[0.03]"
+                          >
+                            <div className="flex items-center gap-2">
+                              <div className="w-7 h-7 rounded-lg bg-sabil/10 flex items-center justify-center">
+                                <CreditCard className="h-3.5 w-3.5 text-sabil" />
+                              </div>
+                              <span className="text-white/70 text-xs">
+                                {tx.name}
+                              </span>
+                            </div>
+                            <span className="text-white/50 text-xs">
+                              {tx.amount}
+                            </span>
+                          </div>
+                        ))}
                       </div>
                     </div>
                   </div>
-
-                  {/* App header */}
-                  <div className="text-center mb-6 flex flex-col items-center">
-                    <Image
-                      src="/logo.png"
-                      alt="Sabil"
-                      width={48}
-                      height={48}
-                      className="rounded-2xl mb-3 shadow-sm"
-                    />
-                    <h3 className="text-white font-medium text-lg font-futura flex items-baseline justify-center" dir="ltr">
-                      S<span className="lowercase text-[1.25em] leading-none">a</span>BIL
-                    </h3>
-                    <p className="text-white/50 text-xs mt-1">Welcome back</p>
-                  </div>
-
-                  {/* Balance card */}
-                  <div className="bg-gradient-to-r from-sabil/20 to-sabil/10 rounded-2xl p-4 mb-4 border border-sabil/20">
-                    <p className="text-white/60 text-xs">Balance</p>
-                    <p className="text-sabil text-2xl font-bold mt-1">
-                      12,500 DA
-                    </p>
-                  </div>
-
-                  {/* Quick actions */}
-                  <div className="grid grid-cols-3 gap-3 mb-4">
-                    {[
-                      {
-                        icon: <Smartphone className="h-5 w-5" />,
-                        label: "Recharge",
-                      },
-                      {
-                        icon: <CreditCard className="h-5 w-5" />,
-                        label: "Transfer",
-                      },
-                      {
-                        icon: <ShieldCheck className="h-5 w-5" />,
-                        label: "Pay",
-                      },
-                    ].map((action) => (
-                      <div
-                        key={action.label}
-                        className="flex flex-col items-center gap-1.5 p-3 rounded-xl bg-white/5 border border-white/5"
-                      >
-                        <div className="text-sabil">{action.icon}</div>
-                        <span className="text-white/70 text-[10px]">
-                          {action.label}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Recent transactions */}
-                  <div className="space-y-2">
-                    <p className="text-white/50 text-xs font-medium px-1">
-                      Recent
-                    </p>
-                    {[
-                      { name: "Ooredoo", amount: "500 DA" },
-                      { name: "AT Internet", amount: "2,000 DA" },
-                    ].map((tx) => (
-                      <div
-                        key={tx.name}
-                        className="flex items-center justify-between p-2.5 rounded-xl bg-white/5"
-                      >
-                        <div className="flex items-center gap-2">
-                          <div className="w-8 h-8 rounded-lg bg-sabil/10 flex items-center justify-center">
-                            <CreditCard className="h-4 w-4 text-sabil" />
-                          </div>
-                          <span className="text-white/80 text-xs">
-                            {tx.name}
-                          </span>
-                        </div>
-                        <span className="text-white/60 text-xs">
-                          {tx.amount}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
                 </div>
 
-                {/* Notch */}
-                <div className="absolute top-0 inset-x-0 flex justify-center">
-                  <div className="w-28 h-6 bg-dark rounded-b-2xl" />
-                </div>
+                {/* Side buttons — Volume */}
+                <div className="absolute -left-[2px] top-[120px] w-[3px] h-8 bg-[#2a2d35] rounded-l-sm" />
+                <div className="absolute -left-[2px] top-[160px] w-[3px] h-8 bg-[#2a2d35] rounded-l-sm" />
+                {/* Side button — Power */}
+                <div className="absolute -right-[2px] top-[140px] w-[3px] h-10 bg-[#2a2d35] rounded-r-sm" />
               </div>
             </motion.div>
 
