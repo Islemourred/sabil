@@ -52,7 +52,9 @@
     "home": "Home",
     "services": "Services",
     "chat": "Chat",
-    "account": "Account"
+    "account": "Account",
+    "secure": "Secure",
+    "instant": "Instant"
   },
   "features": {
     "title": "Powering Daily Life, One Click at a Time.",
